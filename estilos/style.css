@@ -2,6 +2,9 @@
     float: right;
 
 }
+.icono-dw{
+    box-shadow:15% lavenderblush;
+}
 
 .img-icons{
 width: 50px;
@@ -20,4 +23,8 @@ float: left;
 
 .bc-edit{
     background:#065822;
+}
+
+.col{
+    margin-top: 50px;
 }
