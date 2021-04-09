@@ -8,3 +8,15 @@ width: 50px;
 margin: 10px;
 float: left;
 }
+.container-fluid-1, .container-1{
+    width:auto;
+    background: rgb(218, 220, 221);
+}
+.container-2{
+    width: auto;
+    background: rgb(5, 240, 248);
+}
+
+.bc-edit{
+    background:#065822;
+}
