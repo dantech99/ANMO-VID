@@ -27,8 +27,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    object-fit: cover;
-    box-sizing: border-box;
     position: relative;
   
   
@@ -39,7 +37,7 @@ header{
 
 
 .img-1{
-  object-fit: cover;
+ 
     width: 350px;
     animation: arriba 1s ease-in;
     position: absolute;
@@ -129,8 +127,10 @@ header{
 }
 
 @media screen and (max-width:700px) {
+    
     .img-1{
-        margin-left: 300px;
+        margin-left: 700px;
+        
     }
 
     .textos h1{
@@ -150,8 +150,7 @@ header{
     }
     
     .img-1{
-        height: 370px;
-       
+      
     }
 
     .textos h1{
