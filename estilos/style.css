@@ -14,36 +14,34 @@ header{
     background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
-    padding: 180px;
+    padding: auto;
     width: 100%;
-    
-    
-   
+  
 }
 
 .container-header{
-
+    width: 95%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
-   position: relative;
+}
   
   
     
   
-}
+
 
 
 
 .img-1{
  
-    width: 350px;
+    display: block;
+    width: 300px;
+    object-fit: cover;
+  
     animation: arriba 1s ease-in;
-    position: absolute;
-  
-    margin-right: 900px;
-  
+ 
 }
 .card{
     animation: arriba 1s step-start;
@@ -52,7 +50,7 @@ header{
 .textos{
    
     color: #fff;
-  margin-left: 400px;
+ 
     animation: moverDerecha 1s ease-in;
 }
 
@@ -70,9 +68,7 @@ header{
     background: #AAFFA9; 
     background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9); 
     background: linear-gradient(to right, #11FFBD, #AAFFA9); 
-    
-    position: relative;
-    z-index: 15;
+ 
 }
 
 @keyframes moverIzquierda{
@@ -111,10 +107,46 @@ header{
     }
 }
 
+@media screen and (max-width:1200px){
+    #container{
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: 300px;
+       
+    }
+    .product-image {
+       
+        display: block;
+       
+        overflow: hidden;
+        height: 100%;
+        width: 50%;
+        
+    }
+   
+    #container img{
+        width: 300px;
+    }
+
+    .product-details {
+        display: block;
+        text-align: left;
+        overflow: hidden;
+        padding: 20px;
+        height: 100%;
+       
+        width: 50%;
+    
+    }
+}
+
 @media screen and (max-width:1000px) {
+   
     .img-1{
        
-        margin-left: 500px;
+        width: 300px;
     }
 
     .textos h1{
@@ -129,10 +161,10 @@ header{
 @media screen and (max-width:700px) {
     
     .img-1{
-        margin-left: 700px;
+        width:200px;
         
     }
-
+  
     .textos h1{
         font-size: 40px;
     }
@@ -146,11 +178,25 @@ header{
         width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
+        text-align: center;
+        
       
+    }
+
+    header{
+        height: 500px;
+        padding: 48px;
+        width: 100%;
+       
+       
     }
     
     .img-1{
+      width: 200px;
+      position: absolute;
+      margin-top: 250px;
       
+     
     }
 
     .textos h1{
@@ -160,4 +206,148 @@ header{
     .textos h2{
         font-size: 25px;
     }
+
+    #container{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }
+
+
+
+
+
+#container{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 250px;
+	width: 500px;
+	
+}
+
+
+
+/* 	Product details  */
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 20px;
+	height: 100%;
+	float: left;
+	width: 50%;
+
+}
+
+/* 	Product Name */
+#container .product-details h1{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 34px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Farsan', cursive;
+	display: inline-block;
+	background: #FFA69E;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: #FFF;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+
+
+
+/* The most important information about the product */
+#container .product-details > p {
+	font-family: 'Farsan', cursive;
+	text-align: center;
+	font-size: 20px;
+	color: #7d7d7d;
+	
+}
+
+/* control */
+
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+/* the Button */
+
+.btn:hover{transform: translateY(-4px);}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+
+
+
+
+/* product image  */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 100%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
