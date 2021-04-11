@@ -112,6 +112,11 @@ header{
 
 /*   tarjetas main    */
 
+.container{
+  float: left;
+  padding-top: 40px;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
@@ -124,29 +129,46 @@ main {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    color: #ecf0f1;
+    color:#000000;
   }
   
   .cards {
     grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: repeat(12, minmax(auto, 60px));
-    grid-gap: 10px;
+    grid-gap: 30px;
   }
   
   .card {
     grid-column-end: span 3;
     display: flex;
     flex-direction: column;
-    background-color: #39393b;
+    background-color: #dadae4;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 200px;
+    animation: arriba 1s ease-in;
+    
   }
 
-  .sidebar{
+  .container .sidebar{
     width: 300px;
-    border: #303032 solid;
+    border: 1px #d2d2d4 solid;
+    grid-column: span 2;
+    grid-row: span 4;
+   
+  
+  }
+  .container .sidebar img {
+    display: flex;
+    width: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+ .container .sidebar div{
+  padding: 15px;
+   
   }
   
   .card:hover {
@@ -167,6 +189,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
   
   .card__content {
     padding: 20px;
@@ -191,7 +214,11 @@ main {
   
   @media only screen and (max-width: 1000px) {
     .card {
-      grid-column-end: span 6;
+      grid-column-end: span 5;
+    }
+
+    main .sidebar{
+      grid-gap: 30px;
     }
   }
   
@@ -200,7 +227,13 @@ main {
       grid-gap: 20px;
     }
     .card {
-      grid-column-end: span 12;
+      grid-column-end: span 4;
+    }
+
+    main .sidebar{
+      grid-column: 1/ 6;
+     
+    
     }
   }
   
@@ -215,8 +248,11 @@ main {
       grid-gap: 20px;
     }
     .card {
-      grid-column-end: span 6;
+      grid-column-end: span 4;
+      width: 300px;
     }
+
+   
   }
 
 
