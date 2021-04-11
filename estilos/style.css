@@ -116,7 +116,7 @@ main {
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     grid-gap: 50px;
-    padding: 40px 0;
+    padding: 30px 0;
   }
   
   .text--medium {
@@ -135,12 +135,18 @@ main {
   }
   
   .card {
-    grid-column-end: span 4;
+    grid-column-end: span 3;
     display: flex;
     flex-direction: column;
     background-color: #39393b;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    width: 200px;
+  }
+
+  .sidebar{
+    width: 300px;
+    border: #303032 solid;
   }
   
   .card:hover {
