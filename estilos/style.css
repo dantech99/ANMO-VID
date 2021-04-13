@@ -352,34 +352,6 @@ header{
  
  
 
-
-       
-    }
-    .product-image {
-       
-        display: block;
-       
-        overflow: hidden;
-        height: 100%;
-        width: 50%;
-        
-    }
-   
-    #container img{
-        width: 300px;
-    }
-
-    .product-details {
-        display: block;
-        text-align: left;
-        overflow: hidden;
-        padding: 20px;
-        height: 100%;
-       width: 50%;
-    
-    }
-}
-
 @media screen and (max-width:1000px) {
    
     .img-1{
