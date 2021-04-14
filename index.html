@@ -93,7 +93,7 @@
           </p>
           <div class="card__info">
             <div class="btn-group">
-              <a href="#" class="btn btn-primary"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
               <a href="#" class="btn btn-primary">informacion</a>
             </div>
           </div>
@@ -199,6 +199,8 @@
     </section>
  </main>
 
+ <!------------sidebar ----------------->
+
 <aside class="sidebar">
   <div>
   <ul class="list-group">
@@ -228,7 +230,10 @@
  
 </aside> 
 
+<!-------tarjetas noticias------------->
+
 <div class="widget-1">
+  widget
   <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Well done!</h4>
     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -237,6 +242,7 @@
   </div>
 </div>   
 <div class="widget-2">
+  widget
   <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Well done!</h4>
     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -246,6 +252,7 @@
 </div>
 
 <div class="widget-3">
+  widget
   <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Well done!</h4>
     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -253,32 +260,70 @@
     <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
   </div>
 </div>
+
+
+<!------------footer ----------->
 <footer class="footer">
   <h3>FOOTER</h3>
 </footer> 
 </div>    
 
 
+<!-- ventanas modal o pop up -->
 
 
 
 
-
-
-
-
-
-
-
-   
-<!-------tarjetas noticias------------->
-
-<!------------sidebar ----------------->
-
-<!------------footer ----------->
-
-
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kimetsu No Yaiba</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">HD</div>
+              <h4>1080p</h4>
+            </div>
+            <a href="https://drive.google.com/uc?export=download&id=184qu1Md8_arZENlIoPsne0SwoaAIc1pi" class="btn btn-primary"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Alta</div>
+              <h4>720p</h4>
+            </div>
+            <a href="#" class="btn btn-primary"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Media</div>
+              <h4>420p</h4>
+            </div>
+            <a href="#" class="btn btn-primary"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Baja</div>
+              <h4>360p</h4>
+            </div>
+            <a href="#" class="btn btn-primary"><box-icon type='solid' name='download' color="white" size="sm" animation="fade-down-hover"></box-icon></a>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>
 </html>
+
+
+
