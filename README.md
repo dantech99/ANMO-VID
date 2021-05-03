@@ -1,6 +1,4 @@
 #Otakur DW
-
-# FOREST ANIME
 en este sitio web se podra descargar anime en diferentes calidades de video.
 los animes que se podran descargar seran los que no esten en emision para evitar problemas legales y cumplir con las normas de copy.
 con forest anime buscare brindar a los usuarios amantes del anime japones un gran directorio de animes con la posibilidad de descargarlos en diferentes calidades.
