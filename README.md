@@ -1,4 +1,4 @@
-#Otakur DW
+#FOREST ANIME
 
 
 en este sitio web se podra descargar anime en diferentes calidades de video.
@@ -7,7 +7,7 @@ con forest anime buscare brindar a los usuarios amantes del anime japones un gra
 el sitios se dividira en varias secciones o paginas.
 
 CATALGO O DIRECCTORIO ANIME DESCARGAS:
-la pagina catalogo contara con una inmensa libreria de animes ya finalizados, tendra un apartado para los datos reñevantes del anime (portada, nombre, sinopsis, estado, generos, fecha de inicio y final, productora).
+la pagina catalogo contara con una inmensa libreria de animes ya finalizados, tendra un apartado para los datos relevantes del anime (portada, nombre, sinopsis, estado, generos, fecha de inicio y final, productora).
 
 Dos formas de descarga.
 1.la tarjeta ubicada ubicada en en el catalogo dispondra de un boton de descargas, desplegandose una ventana modal o popup con las diferentes calidades de descarga.
