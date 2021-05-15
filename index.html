@@ -26,15 +26,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"  style="color:#fff;">Inicio</a>
+            <button class="btn btn-outline-success me-2" type="button" style="color:#fff;"><i class="bi bi-house-door"></i>Home</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link active " href="#"  style="color:#fff;">Link</a>
+            <button class="btn btn-outline-success me-2" type="button" style="color:#fff;"><i class="bi bi-collection"></i>Animes</button>
           </li>
-         
           <li class="nav-item">
-            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true"  style="color:#fff;">Disabled</a>
+            <button class="btn btn-outline-success me-2" type="button" style="color:#fff;"><i class="bi bi-folder"></i>Manga</button>
           </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-success me-2" type="button" style="color:#fff;"><i class="bi bi-file-earmark-richtext"></i>Pack</button>
+          </li>
+
         </ul>
         <form class="d-flex">
           <button class="btn btn-outline-success me-2" type="button" style="color:#fff;"><i class="bi bi-justify"></i>Directorio Anime</button>
@@ -55,10 +58,10 @@
 
   <header>
     <div class="container-header">
-      <img src="imagenes/chika.png" class="img-1" >
+      <img src="imagenes/waifu.png" class="img-1" >
     <div class="textos">
         <h1>Forest Anime</h1>
-        <h2><span><button type="button" class="btn btn-primary btn-lg">Descarga </button></span> anime</h2>
+        <h2>Descarga anime en la mejor calidad</h2>
     </div>
     </div>
    </header>
@@ -77,7 +80,7 @@
 <div class="contenedor-padre">
  
 <main class="contenido-cuerpo">
-  <h1>Ultimos Animes Agregados</h1>
+  <div class="list-group-item active" aria-current="true" style="padding: 20px;"><h2>Ultimos Animes Agregados</h2></div>
 
   <section class="cards">
       <div class="card">
@@ -202,15 +205,14 @@
  <!------------sidebar ----------------->
 
 <aside class="sidebar">
-  <div>
-  <ul class="list-group">
-    <li class="list-group-item active" aria-current="true">An active item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>
+  <div class="list-group-item active" aria-current="true">Redes</div>
+  <div class="d-grid gap-2 d-md-block" style="margin: 10px;">
+    <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-facebook"></i></button>
+    <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-twitter"></i></button>
+    <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-discord"></i></button>
+    <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-whatsapp"></i></i></button>
   </div>
+  
 <div>
   <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Well done!</h4>
@@ -220,16 +222,14 @@
   </div>
   </div>
   <div>
-    <div class="d-grid gap-2 d-md-block">
-      <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-facebook"></i></button>
-      <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-twitter"></i></button>
-      <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-discord"></i></button>
-      <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-whatsapp"></i></i></button>
-    </div>
   </div>
  
 </aside> 
 
+
+<div class="encabezado">
+  <div class="list-group-item active" aria-current="true" style="padding: 20px;"><h2>Ultimas Noticias</h2></div>
+</div>
 <!-------tarjetas noticias------------->
 
 <div class="widget-1">

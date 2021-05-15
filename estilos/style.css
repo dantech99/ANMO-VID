@@ -15,6 +15,7 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(4, auto);
 grid-template-areas: "header header header"
                       "contenido-cuerpo contenido-cuerpo sidebar"
+                      "encabezado encabezado encabezado"
                       "widget-1 widget-2 widget-3"
                       "footer footer footer";
                       
@@ -46,6 +47,10 @@ grid-template-areas: "header header header"
       grid-row: span 3;
       grid-area: sidebar;
   
+  }
+
+  .encabezado{
+    grid-area: encabezado;
   }
   
   .contenedor-padre .widget-1,
@@ -131,7 +136,7 @@ header{
 .img-1{
  
     display: block;
-    width: 300px;
+    width: 350px;
     object-fit: cover;
   
     animation: arriba 1s ease-in;
