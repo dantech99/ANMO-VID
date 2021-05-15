@@ -143,6 +143,10 @@ header{
  
 }
 
+i{
+  margin-right: 10px;
+}
+
 
 .textos{
    
@@ -153,11 +157,11 @@ header{
 
 .textos h1{
     font-size: 80px;
-    color: #fff;
+    color: rgb(3, 3, 3);
 }
 .textos h2{
     font-size: 30px;
-    color: #fff;
+    color: rgb(10, 10, 10);
 }
 
 .wave{
