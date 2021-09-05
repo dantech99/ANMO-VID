@@ -11,39 +11,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body>
 
+
 <!----------- menu nav------------->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background: #ffffff;"> 
+<nav class="navbar sticky-top navbar-expand-lg menu"> 
   <div class="container-xxl">
-    <a class="navbar-brand" href="#"  style="color:rgb(0, 0, 0); font-size: 30px;" >
+    <a class="navbar-brand " href="#"  style="color:rgb(255, 255, 255); font-size: 40px;" >
        Otakru.DW
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #fbfcfd; background: #0a0a0a;">
+      <span class="icono_lista"><i class="bi bi-list" style="font-size: 2rem;""></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <button class="btn btn-outline-light me-2" type="button" style="color:rgb(0, 0, 0);"><i class="bi bi-house-door"></i> &nbsp;Home</button>
+          <button class="btn boton me-2" type="button" ><i class="bi bi-house-door"></i> &nbsp;Home</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-outline-light me-2" type="button" style="color:rgb(5, 0, 0);"><i class="bi bi-collection"></i>&nbsp;Animes</button>
+          <button class="btn boton me-2" type="button" ><i class="bi bi-collection"></i>&nbsp;Animes</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-outline-light me-2" type="button" style="color:rgb(8, 0, 0);"><i class="bi bi-folder"></i>&nbsp;Manga</button>
+          <button class="btn me-2 boton" type="button" ><i class="bi bi-folder"></i>&nbsp;Manga</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-outline-ligth me-2" type="button" style="color:rgb(12, 11, 11);"><i class="bi bi-file-earmark-richtext"></i>&nbsp;Pack</button>
+          <button class="btn boton me-2" type="button" ><i class="bi bi-file-earmark-richtext"></i>&nbsp;Pack</button>
         </li>
 
       </ul>
       <form class="d-flex">
-        <button class="btn btn-outline-light me-2" type="button" style="color:rgb(10, 1, 1);"><i class="bi bi-justify"></i>&nbsp;Directorio Anime</button>
-        <button class="btn btn-outline-light me-2" type="button"  style="color:rgb(5, 1, 1);"><i class="bi bi-facebook"></i></button>
-        <button class="btn btn-outline-light me-2" type="button"  style="color:rgb(0, 0, 0);"><i class="bi bi-twitter"></i></button>
+        <button class="btn boton me-2" type="button" ><i class="bi bi-justify"></i>&nbsp;Directorio Anime</button>
+        <button class="btn boton me-2" type="button" ><i class="bi bi-facebook"></i></button>
+        <button class="btn boton me-2" type="button"  ><i class="bi bi-twitter"></i></button>
         
       </form>
     </div>
@@ -65,207 +71,160 @@
     </div>
    </header>-->
 
-   <div class="slider">
-    <div class="slide-track">
-        <div class="slide">
-            <div class="card_user">
+
+
+
+    <div class="owl-carousel owl-theme carrusel">
+      <div class="item"> 
+         <div class="card_user">
+        <div class="card_user_img">
+            <img src="imagenes/smarphone.jpg" alt="">
+        </div>
+        <div class="card_user_content">
+            <div class="card_text_user_title">
+              <span class="product_user_name">darling in the franxx</span> 
+              <p></p>
+            </div>
+          
+        </div>
+    </div></div>
+      <div class="item"> 
+         <div class="card_user">
                 <div class="card_user_img">
-                    <img src="imagenes/rhapsody.jpg" alt="">
+                   <a href="/pages/serie.html"><img src="imagenes/darling.jpg" alt=""></a>
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                    <a href="\pages\serie.html"><span class="product_user_name">ANIME</span> </a>
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/darling.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
                     <img src="imagenes/demon-slayer.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
                     <img src="imagenes/iseaki1.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/kaguya.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/kanojo.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/konosuba.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/ladellibirot.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
                     <img src="imagenes/rhapsody.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/masamune.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
-                <div class="card_user_img">
-                    <img src="imagenes/masamune.jpg" alt="">
-                </div>
-                <div class="card_user_content">
-                    <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
                     <img src="imagenes/nagaroto.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
+                <div class="card_user_img">
+                    <img src="imagenes/masamune.jpg" alt="">
+                </div>
+                <div class="card_user_content">
+                    <div class="card_text_user_title">
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
+                    </div>
+                  
+                </div>
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
                     <img src="imagenes/quintillisas.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="card_user">
+            </div></div>
+      <div class="item">  <div class="card_user">
                 <div class="card_user_img">
-                    <img src="imagenes/smarphone.jpg" alt="">
+                    <img src="imagenes/konosuba.jpg" alt="">
                 </div>
                 <div class="card_user_content">
                     <div class="card_text_user_title">
-                      <span class="product_user_name">USUARIO</span> 
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic.</p>
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
+                    </div>
+                  
+                </div>
+            </div></div>
+      <div class="item">  <div class="card_user">
+                <div class="card_user_img">
+                    <img src="imagenes/ladellibirot.jpg" alt="">
+                </div>
+                <div class="card_user_content">
+                    <div class="card_text_user_title">
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
+                    </div>
+                  
+                </div>
+            </div></div>
+      <div class="item">  <div class="card_user">
+                <div class="card_user_img">
+                    <img src="imagenes/kaguya.jpg" alt="">
+                </div>
+                <div class="card_user_content">
+                    <div class="card_text_user_title">
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
+                    </div>
+                  
+                </div>
+            </div></div>
+      <div class="item">  
+        <div class="card_user">
+                <div class="card_user_img">
+                    <img src="imagenes/darling.jpg" alt="">
+                </div>
+                <div class="card_user_content">
+                    <div class="card_text_user_title">
+                      <span class="product_user_name">ANIME</span> 
+                      <p></p>
                     </div>
                   
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-   
+          </div>
+  </div>
+
 
 <!-----------tarjetas -------------->
     
@@ -278,14 +237,14 @@
 
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/nagaroto.jpg" alt="">
+              <img src="imagenes/darling.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+              <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
@@ -294,140 +253,141 @@
               <img src="imagenes/demon-slayer.jpg" alt="">
           </div>
           <div class="card_a_content">
-              <h2>Nombre del Anime</h2>
+              <h3>nombre del anime</h3>
+             <!-- <div class="btn-group">
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
+                <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
+              </div> -->
+          </div>
+      </div>
+      
+      <div class="card_a">
+          <div class="card_a_img">
+              <a href="/pages/serie.html"><img src="imagenes/darling.jpg" alt=""></a>
+          </div>
+          <div class="card_a_content">
+              <p>Nombre del Anime el cual ira en su respwectiva targeta</p>
               <div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
+                
               </div>
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/darling.jpg" alt="">
+              <img src="imagenes/kanojo.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+              <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/kanojo.jpg" alt="">
+              <img src="imagenes/konosuba.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+             <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/konosuba.jpg" alt="">
+              <img src="imagenes/masamune.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+             <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/masamune.jpg" alt="">
+              <img src="imagenes/nagaroto.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+             <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/nagaroto.jpg" alt="">
+              <img src="imagenes/quintillisas.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+              <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       
       <div class="card_a">
           <div class="card_a_img">
-              <img src="/imagenes/quintillisas.jpg" alt="">
+              <img src="imagenes/smarphone.jpg" alt="">
           </div>
           <div class="card_a_content">
               <h2>Nombre del Anime</h2>
-              <div class="btn-group">
+            <!--<div class="btn-group">
                 <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
                 <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
-          </div>
-      </div>
-      
-      <div class="card_a">
-          <div class="card_a_img">
-              <img src="/imagenes/smarphone.jpg" alt="">
-          </div>
-          <div class="card_a_content">
-              <h2>Nombre del Anime</h2>
-              <div class="btn-group">
-                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
-                <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-              </div>
+              </div>-->
           </div>
       </div>
       <div class="card_a">
         <div class="card_a_img">
-            <img src="/imagenes/rhapsody.jpg" alt="">
+            <img src="imagenes/rhapsody.jpg" alt="">
         </div>
         <div class="card_a_content">
             <h2>Nombre del Anime</h2>
-            <div class="btn-group">
-              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
-              <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-            </div>
+          <!--<div class="btn-group">
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
+                <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
+              </div>-->
         </div>
     </div>
 
     <div class="card_a">
       <div class="card_a_img">
-          <img src="/imagenes/kaguya.jpg" alt="">
+          <img src="imagenes/kaguya.jpg" alt="">
       </div>
       <div class="card_a_content">
           <h2>Nombre del Anime</h2>
-          <div class="btn-group">
-            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
-            <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-          </div>
+         <!--<div class="btn-group">
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
+                <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
+              </div>-->
       </div>
   </div>
 
   <div class="card_a">
     <div class="card_a_img">
-        <img src="/imagenes/iseaki1.jpg" alt="">
+        <img src="imagenes/iseaki1.jpg" alt="">
     </div>
     <div class="card_a_content">
         <h2>Nombre del Anime</h2>
-        <div class="btn-group">
-          <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
-          <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
-        </div>
+       <!--<div class="btn-group">
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #0d6efd;"><box-icon type='solid' name='download' color="white" animation="fade-down-hover"></box-icon></a>
+                <a href="#" class="btn btn" style="font-size: 1.1rem; background: #fbfcfd;">informacion</a>
+              </div>-->
     </div>
 </div>
       
@@ -553,6 +513,56 @@
   </div>
 </div>
 
+
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      items:4,
+      loop:true,
+     
+      responsiveClass:true,
+      responsive:{
+        300:{
+            items:1,
+            nav:false,
+           
+        },
+        500:{
+            items:2,
+            nav:false,
+            margin:10
+        },
+        600:{
+            items:2,
+            nav:false,
+            margin: 10
+        },
+      
+        1000:{
+            items:6,
+            loop:true
+            
+        }
+    },
+    
+     
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true
+  });
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+
+    
+  })
+  </script>
 
 </body>
 </html>
