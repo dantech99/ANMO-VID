@@ -145,36 +145,6 @@ grid-template-areas: "header header header"
  
   
 
-
-
-    
-
-
-header{
-    background: #AAFFA9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #03b986, #62fc60);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #03b986, #62fc60); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 650px;
-    padding: auto;
-    width: 100%;
-  
-}
-
-.container-header{
-    width: auto;
-    max-width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-  
-  
-    
-  
-
-
-
-
 .img-1{
  
     display: block;
@@ -208,13 +178,7 @@ header{
     color: rgb(255, 246, 246);
 }
 
-.wave{
-    
-    background: #AAFFA9; 
-    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9); 
-    background: linear-gradient(to right, #11FFBD, #AAFFA9); 
- 
-}
+
 
 
 @keyframes moverIzquierda{
@@ -270,21 +234,6 @@ header{
     color:#000000;
   }
   
-
-
-
-  /*.sidebar div{
-  padding: 5px;
-   
-  }*/
-
-
-
-
-
-
-
-
 
 
   /*///// estilos para las tarjetas */
