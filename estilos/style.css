@@ -8,19 +8,10 @@ body{
 }
 
 
-  
-  .contenedor-padre .sidebar {
-      position: relative;
-      background: #fff;
-      color: #fff;
-      min-height: 100px;
-      grid-row: span 3;
-      grid-area: sidebar;
-  
-  }
+
 
  
-@keyframes moverIzquierda{
+/* @keyframes moverIzquierda{
     0%{
         opacity: 0;
         transform: translateX(-100px);
@@ -57,112 +48,19 @@ body{
 }
 
 
-
-.container{
-  float: left;
-  padding-top: 40px;
-}
-
-
-  
-  .text--medium {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color:#000000;
-  }
-  
-
-
-  /*///// estilos para las tarjetas */
-  
-  .secction{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    width: auto;
-   
-  }
-  .card_a{
-    display: block;
-    max-width: 400px;
-    min-height: 400px;
-    margin: 10px 5px;
-    border-radius: 6px;
-    background: #fff;
-    cursor: pointer;
- 
-    transition: all 0.5s ease 0s;
-  }
-  
-  .card_a:hover{
-    transform: translatey(-7px);
-    
-  }
-  
-  .card_a_img{
-    width: auto;
-    max-height: 300px;
-    overflow: hidden;
-
-    background-position: center;
-    background-repeat: no-repeat;
-   
-  }
-  
-  .card_a_img img{
-    width: 100%;
-    max-width: 700%;
-
-  }
-
-  .card_a_content{
-    width: auto;
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-    background: #152729;
-    color: #fff;
-   
-   
-    
-  
-  }
-  .card_a_content h4{
-    overflow:hidden;
-    text-align: center;
-  }
-  
-  .card_a_link{
-    text-align: center;
-    display: flex;
-  }
-  
-  .card_a_link a{
-    background: rgb(2, 174, 253);
-    color: black;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    width: 200px;
-    height: 10px;
-    margin: 0 5px;
-  }
-  
-  .card_a_link a:hover{
-    background: #fff;
-   
-  }
+ */
 
 
 /*  tarjetas carrusel owl */
 
+.item{
+ max-height: 400px;
+ width: auto;
+}
+
 .card_content{
-      
-  margin:20px 20px;
+  margin:20px 13px;
   display: block;
-  max-width: 200px;
   overflow: hidden;
   border-radius: 5px;
   background:#ffffff;
@@ -170,8 +68,9 @@ body{
 }
 
 .card_content_img{
-  width: 100%;
+  height: 300px;
   overflow: hidden;
+ 
 
 }
 .card_content_img:hover img{
@@ -182,6 +81,9 @@ body{
 .card_content_img img{
   width: 100%;
   transition: all .4s ease-in-out;
+  object-fit: cover;
+  min-width: 230px;
+  max-width: 300px;
   
 }
 .card_content_content{
