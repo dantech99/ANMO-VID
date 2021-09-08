@@ -191,7 +191,7 @@ body{
   color: rgb(255, 255, 255);
   text-align: center;
   max-height: 50px;
-  min-height: 50px;
+  min-height: 80px;
  
 }
 .card_content_content .card_content_title{
