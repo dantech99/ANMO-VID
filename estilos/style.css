@@ -162,15 +162,15 @@ body{
       
   margin:20px 20px;
   display: block;
-  width: 200px;
+  max-width: 200px;
+  overflow: hidden;
   border-radius: 5px;
   background:#ffffff;
  
 }
 
 .card_content_img{
-  /* width: 100%; */
-  
+  width: 100%;
   overflow: hidden;
 
 }
@@ -182,8 +182,7 @@ body{
 .card_content_img img{
   width: 100%;
   transition: all .4s ease-in-out;
-
- 
+  
 }
 .card_content_content{
   padding: 5px;
@@ -194,11 +193,16 @@ body{
   min-height: 80px;
  
 }
-.card_content_content .card_content_title{
-  padding: 10px;
-}
+
 .card_content_title .card_title{
   font-size: 15px;
+}
+.card_content_title a{
+  text-decoration: none;
+  color: #fff;
+}
+.card_content_title a:hover{
+ color: aquamarine;
 }
 
 
