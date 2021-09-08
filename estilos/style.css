@@ -165,16 +165,24 @@ body{
   width: 200px;
   border-radius: 5px;
   background:#ffffff;
+ 
 }
 
 .card_content_img{
-  width: 100%;
+  /* width: 100%; */
   
+  overflow: hidden;
 
+}
+.card_content_img:hover img{
+  -webkit-transform:scale(1.2);transform:scale(1.2);
+  
 }
 
 .card_content_img img{
   width: 100%;
+  transition: all .4s ease-in-out;
+
  
 }
 .card_content_content{
@@ -209,14 +217,3 @@ body{
   }
   
 }
-
-/* @media screen and (min-width:800px) {
-  .card_content{
-      
-    margin:20px auto;
-    display: block;
-    width: 200px;
-    border-radius: 5px;
-    background:#ffffff;
-  }
-} */
