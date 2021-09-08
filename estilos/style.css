@@ -8,54 +8,18 @@ body{
 
 
 
-.contenedor-padre{
-width: 100%;
-display: grid;
-grid-gap: 5px;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(4, auto);
-grid-template-areas: "header header header"
-                      "contenido-cuerpo contenido-cuerpo contenido-cuerpo"
-                      "encabezado encabezado encabezado"
-                      "widget widget widget"
-                      "footer footer footer";
-                      
-  }
   
-  
-  .contenedor-padre > div,
-  .contenedor-padre .header,
-  .contenedor-padre .contenido-cuerpo,
-  .contenedor-padre .sidebar,
-  .contenedor-padre .footer {
-      padding: 5px;
-      
-  }
+ 
 
  
-  .menu{
-    background: #152729;
-   
-  }
-  .boton{
-    color: #ffffff;
-  }
-  
   .boton:hover{
   background: rgb(255, 255, 255);
   
   }
   
- 
-  .contenedor-padre .contenido-cuerpo{
-      /*grid-column: span 2;*/
-      grid-area: contenido-cuerpo;
-   
-      
-     
-  }
 
-  .contenido_title{
+
+  /* .contenido_title{
     padding: 5px;
     width: 100%;
    background-image: url(../imagenes/full_anime.jpg);
@@ -65,9 +29,9 @@ grid-template-areas: "header header header"
    z-index: 1;
    opacity: 1.5;
    color: #fff;
-  }
+  } */
 
-  .contenido_title h2{
+  /* .contenido_title h2{
     padding: 20px;
   }
 
@@ -82,7 +46,7 @@ grid-template-areas: "header header header"
     opacity: 0.8;
     z-index: -1;
   }
-  
+   */
   .contenedor-padre .sidebar {
       position: relative;
       background: #fff;
