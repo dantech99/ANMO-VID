@@ -1,52 +1,14 @@
-
-
-
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body{
   font-family: 'Poppins', sans-serif;
 }
 
 
-
   
- 
-
- 
-  .boton:hover{
-  background: rgb(255, 255, 255);
-  
-  }
-  
-
-
-  /* .contenido_title{
-    padding: 5px;
-    width: 100%;
-   background-image: url(../imagenes/full_anime.jpg);
-   background-size: cover;
-   background-position: center;
-   position: relative;
-   z-index: 1;
-   opacity: 1.5;
-   color: #fff;
-  } */
-
-  /* .contenido_title h2{
-    padding: 20px;
-  }
-
-  .contenido_title::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #152729;;
-    opacity: 0.8;
-    z-index: -1;
-  }
-   */
   .contenedor-padre .sidebar {
       position: relative;
       background: #fff;
@@ -281,228 +243,31 @@ body{
   }
 
 
- 
-  /*@media only screen and (max-width: 360px) {
-    .card {
-      grid-column-end: span 6;
-      width: auto;
+/*  tarjetas carrusel owl */
+
+.card_content{
       
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .card {
-      grid-column-end: span 6;
-      width: 200px;
-    }
-  }
-  @media only screen and (min-width: 600px) {
-    .card {
-      grid-column-end: span 5;
-      width: 230px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .card {
-      grid-column-end: span 6;
-      width: 200px;
-    }
-  }
-  @media only screen and (min-width: 992px) {
-    .card {
-      grid-column-end: span 5;
-      width: 230px;
-    }
-  }
-
-
-
-   
-  @media only screen and (min-width: 1200px) {
-   
-   
-    .card {
-      grid-column-end: span 4;
-      
-    }
-  }*/
-  
- 
- 
-
-@media screen and (max-width:1000px) {
-
-
-   
-    .img-1{
-       
-        width: 300px;
-    }
-
-    .textos h1{
-        font-size: 70px;
-    }
-
-    .textos h2{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width:700px) {
-
-  .card_user_img img{
-    width: 200px;
-  }
-    
-    .img-1{
-        width:200px;
-        
-    }
-  
-    .textos h1{
-        font-size: 40px;
-    }
-
-    .textos h2{
-        font-size: 15px;
-    }
-}
-@media screen and (min-width:300px) {
-
-  .card_user .card_user_img img{
-    width: 500px;
-  }
-    .container-header{
-        width: 100%;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        text-align: center;
-        
-      
-    }
-
-  
-    header{
-        height: 500px;
-        padding: 48px;
-        width: 100%;
-       
-       
-    }
-    
-    .img-1{
-      width: 200px;
-      position: absolute;
-      margin-top: 250px;
-      
-     
-    }
-
-    .textos h1{
-        font-size: 70px;
-    }
-
-    .textos h2{
-        font-size: 25px;
-    }
-
-    #container{
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-
-
-
-/* carrousel */
-
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
-}
-.slider {
-  background: pr;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 600px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100% auto;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 450px;
-}
-
-/*  tarjeta usuario */
-
-.card_user{
-      
-  margin:20px 10px;
+  margin:20px 20px;
   display: block;
   width: 200px;
   border-radius: 5px;
   background:#ffffff;
 }
 
-.card_user_img{
+.card_content_img{
   width: 100%;
-  overflow: hidden;
+  
 
 }
 
-.card_user_img img{
+.card_content_img img{
   width: 100%;
  
 }
-.card_user_content{
+.card_content_content{
   padding: 5px;
   background: #152729;
-   color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
