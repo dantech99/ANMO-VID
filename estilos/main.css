@@ -1,19 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  background: #000000; }
+
+.widget-title {
+  display: inline-block;
+  margin: 20px 20px; }
+  .widget-title h2 {
+    font-size: 40px;
+    color: #f8f5f5; }
+  .widget-title h2 > i {
+    margin: 0 5px;
+    color: #fd0a0a; }
+  .widget-title h2:hover, .widget-title i:hover {
+    color: #fa1911;
+    cursor: pointer; }
 
 /* variables */
 /* tarjeta carrusel owl */
 .card_content {
   width: 200px;
-  margin: 20px 20px;
+  margin: 20px auto;
   display: block;
   overflow: hidden;
-  border-radius: 5px;
   background: #fff; }
   .card_content .card_content_img {
     height: 300px;
@@ -21,9 +35,8 @@ body {
   .card_content .card_content_img:hover img {
     transform: scale(1.2); }
   .card_content .card_content_img img {
-    width: 100%;
     transition: all .4s ease-in-out;
-    width: 220px; }
+    width: 100%; }
   .card_content .card_content_content {
     padding: 5px;
     background: #152729;
@@ -44,8 +57,11 @@ body {
 
 @media screen and (max-width: 375px) {
   .card_content {
-    margin: 20px auto;
-    display: block;
-    width: 175px;
-    border-radius: 5px;
-    background: #fff; } }
+    width: 200px;
+    height: auto; }
+  .item {
+    margin: 0 auto; }
+  .card_content_img {
+    width: 200px; }
+  .card_content_img img {
+    width: 100%; } }

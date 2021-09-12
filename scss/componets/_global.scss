@@ -1,0 +1,40 @@
+//global
+$color-1:rgb(248, 245, 245);
+$color-2:#fd0a0a;
+$hover-1:rgb(250, 25, 17);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Poppins', sans-serif;
+    background: #000000;
+}
+
+// titulos de wiget
+
+.widget-title{
+    display: inline-block;
+    margin: 20px 20px;
+
+   h2{
+       font-size: 40px;
+       color: $color-1;
+   }
+    h2 > i{
+        margin: 0 5px;
+        color: $color-2;
+       
+    }
+    h2:hover, i:hover{
+        color: $hover-1;
+        cursor: pointer;
+
+    }
+}
+
