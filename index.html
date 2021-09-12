@@ -7,7 +7,7 @@
     <link rel="stylesheet"  href="estilos/bootstrap.min.css">
     <link rel="stylesheet" href="estilos/main.css">
     <script src="funcionalidades/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/cddeada5ba.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
@@ -23,39 +23,31 @@
     <a class="navbar-brand text-light fs-2" href="#"  >
        FOREST
     </a>
-
     <button class="navbar-toggler text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="icono_lista"><i class="bi bi-list" style="font-size: 2rem;"></i></span>
+    <span class="icono_lista"><i class="bi bi-list" style="font-size: 2rem;"></i></span>
     </button>
 
-    <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item ">
-          <button class="btn text-light me-2 " type="button" ><i class="bi bi-house-door"></i> Home</button>
+        <li class="nav-item btn">
+          <a href="#" class="efect me-2"><i class="fas fa-home"></i> Home</a>
         </li>
 
-        <li class="nav-item">
-          <button class="btn text-light me-2  " type="button" ><i class="bi bi-collection"></i> Animes</button>
+        <li class="nav-item btn">
+          <a href="#" class="efect me-2"><i class="fas fa-photo-video"></i> Mangas</a>
         </li>
 
-        <li class="nav-item">
-          <button class="btn me-2 text-light " type="button" ><i class="bi bi-folder"></i> Manga</button>
+        <li class="nav-item btn">
+          <a href="#" class="efect me-2"><i class="fas fa-box"></i> Pack</a>
         </li>
-
-        <li class="nav-item">
-          <button class="btn text-light me-2 " type="button" ><i class="bi bi-file-earmark-richtext"></i> Pack</button>
+        <li class="nav-item btn">
+          <a href="#" class="efect me-2"><i class="fas fa-list"></i> Directorio Anime</a>
         </li>
-        <li class="nav-item">
-          <button class="btn text-light me-2" type="button" ><i class="bi bi-justify"></i> Directorio Anime</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn text-light me-2" type="button" ><i class="bi bi-facebook"></i></button>
-          <button class="btn text-light me-2" type="button"  ><i class="bi bi-twitter"></i></button>
+        <li class="nav-item btn">
+          <a href="#" class="efect me-2"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="efect me-2"><i class="fab fa-twitter"></i></a>
         </li>
       </ul>
-
-   
-     
     </div>
   </div>
 </nav>
@@ -63,24 +55,26 @@
 
 <!-- main -->
 <div class="widget-title">
-  <h2><i class="bi bi-tags-fill"></i>Destacados</h2>
+  <h2><i class="fas fa-tags"></i> Destacados</h2>
 </div>
-
+<!-- carrusel -->
     <div class="owl-carousel owl-theme carrusel">
       <div class="item"> 
          <div class="card_content ">
-        <div class="card_content_img">
+          <div class="card_content_img">
+            <div class="container">
+              <div href="#" class="like-button" title="Like Button">
+                <i class="fa fa-heart fa-1x"></i>
+              </div>
             <img src="imagenes/smarphone.jpg" alt="">
-        </div>
-        <div class="card_content_content">
-            <div class="card_content_title">
-              <p class="card_title">Smarphone isekai</p> 
-              <p></p>
-            </div>
-          
-        </div>
-    </div>
-  </div>
+          </div>
+             <div class="card_content_content">
+                <div class="card_content_title">
+                  <p class="card_title">Smarphone isekai</p> 
+              </div>
+           </div>
+         </div>
+      </div>
       <div class="item"> 
          <div class="card_content ">
                 <div class="card_content_img">
@@ -221,10 +215,120 @@
           </div>
   </div>
 
+<!-- main -->
+<div class="widget-title">
+  <h2><i class="fas fa-fire-alt"></i>Ultimos Capitulos</h2>
+</div>
+<div class="container-fluid bg-dark p-1">
+  <div class="container-lx">
+    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-4 p-4">
+      <div class="col">
+        <div class="p-1 ">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1 ">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1 ">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1 ">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1 ">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-1">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="imagenes/konosuba.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <p>capitulo 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- footer -->
-
-
-
 
 <!-- script -->
 <script src="owlcarousel/jquery.min.js"></script>

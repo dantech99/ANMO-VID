@@ -4,6 +4,7 @@ $bg-color-content:#fff;
 $text-color:#fff;
 $bg-content-footer:#152729;
 $text-color-footer:#fff;
+$text-hover:aquamarine;
 
 
 /* tarjeta carrusel owl */
@@ -44,7 +45,7 @@ $text-color-footer:#fff;
         color: #fff;
     }
     .card_content_title a:hover{
-        color: aquamarine;
+        color:$text-hover ;
     }
 
 }
@@ -68,14 +69,63 @@ $text-color-footer:#fff;
       width: 100%;
   }
 
-
-// @media screen and (max-width:600px){
-//     .card_content{
-//         margin: auto;
-//         width: 300px;
-        
-//     }
-    
-// }
 }
 
+
+//tarjetas ultimos capitulos
+.card-item{
+    width: 300px;
+
+    .card-img{
+       width: 100%;
+       height: 200px;
+       overflow: hidden;
+       cursor: pointer;
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .like-button {
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10rem;
+            background-color: transparent;
+            border: transparent;
+            }
+            
+            .like-button :hover {
+            color: red;
+            }
+    }
+    .card-text{
+        color: $text-color;
+        margin: 5px 10px;
+        cursor: pointer;
+
+    }
+    .card-text:hover{
+        color: $text-hover;
+    }
+
+
+}
+
+
+
+// .etiquetas{
+//     display: flex;
+//    justify-content: flex-start;
+    
+//     .tickets{
+//         margin: 0;
+//         padding: 5px;
+//         color: $text-color;
+//         background: red;
+//         margin:0 10px;
+//         border-radius: 20px;
+//     }
+// }
