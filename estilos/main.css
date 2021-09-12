@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* variables */
+/* tarjeta carrusel owl */
+.card_content {
+  width: 200px;
+  margin: 20px 20px;
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff; }
+  .card_content .card_content_img {
+    height: 300px;
+    overflow: hidden; }
+  .card_content .card_content_img:hover img {
+    transform: scale(1.2); }
+  .card_content .card_content_img img {
+    width: 100%;
+    transition: all .4s ease-in-out;
+    width: 220px; }
+  .card_content .card_content_content {
+    padding: 5px;
+    background: #152729;
+    color: #fff;
+    text-align: center;
+    max-height: 50px;
+    min-height: 80px; }
+  .card_content .card_content_title .card_title {
+    font-size: 15px; }
+  .card_content .card_content_title a {
+    text-decoration: none;
+    color: #fff; }
+  .card_content .card_content_title a:hover {
+    color: aquamarine; }
+
+.carrusel {
+  margin-top: 10px; }
+
+@media screen and (max-width: 375px) {
+  .card_content {
+    margin: 20px auto;
+    display: block;
+    width: 175px;
+    border-radius: 5px;
+    background: #fff; } }

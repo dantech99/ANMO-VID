@@ -1,0 +1,23 @@
+{
+  "name": "anime-forest",
+  "version": "1.0.0",
+  "description": "proyecto anime forest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonio-code2/Anime-Forest.git"
+  },
+  "keywords": [
+    "npm",
+    "javascript"
+  ],
+  "author": "antoniomcs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antonio-code2/Anime-Forest/issues"
+  },
+  "homepage": "https://github.com/Antonio-code2/Anime-Forest#readme"
+}
