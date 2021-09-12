@@ -5,6 +5,10 @@ $text-color:#fff;
 $bg-content-footer:#152729;
 $text-color-footer:#fff;
 $text-hover:aquamarine;
+$tags-hover:rgb(105, 4, 4);
+$bg-tags:rgb(253, 5, 5);
+$color-tags:#fff;
+
 
 
 /* tarjeta carrusel owl */
@@ -81,36 +85,73 @@ $text-hover:aquamarine;
        height: 200px;
        overflow: hidden;
        cursor: pointer;
+       position: relative;
 
         img{
             width: 100%;
             border-radius: 10px;
             object-fit: cover;
+            position: relative;
         }
 
-    //     .like-button {
-    //         color: red;
-    //         font-size: 20px;
-    //         cursor: pointer;
-    //         border-radius: 10rem;
-    //         background-color: transparent;
-    //         border: transparent;
-    //         }
-            
-    //         .like-button :hover {
-    //         color: red;
-    //         }
-     }
-    .card-text{
-        color: $text-color;
-        margin: 5px 10px;
+        .like-button {
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 15rem;
+            position: absolute;
+            z-index: 2;
+          
+           
+
+
+            .tags {
+                color: $color-tags;
+                background:$bg-tags;
+                border-radius: 5px;
+                padding: 5px;
+               
+            }
+            .tags:hover{
+                background: $tags-hover;
+            }
+            }
+    
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+       transition: .3s ease;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       }
+    
+       .play-icon {
+        background: transparent;
+        border: none;
+        position: absolute;
+        color: rgb(250, 14, 14);
+        font-size: 3.5rem;
         cursor: pointer;
-
+        left: 45%;
+        bottom: 39%;
+        .fa-play-circle:hover{
+           color: $tags-hover;
+        }
     }
-    .card-text:hover{
-        color: $text-hover;
-    }
+        
+}
 
+.card-text{
+    color: $text-color;
+    margin: 5px 10px;
+    cursor: pointer;
+
+}
+.card-text:hover{
+    color: $text-hover;
+}
 
 }
 

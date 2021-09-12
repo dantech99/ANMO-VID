@@ -79,20 +79,46 @@ body {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .card-item .card-img img {
       width: 100%;
       border-radius: 10px;
-      object-fit: cover; }
+      object-fit: cover;
+      position: relative; }
     .card-item .card-img .like-button {
-      color: red;
       font-size: 20px;
       cursor: pointer;
-      border-radius: 10rem;
-      background-color: transparent;
-      border: transparent; }
-    .card-item .card-img .like-button :hover {
-      color: red; }
+      border-radius: 15rem;
+      position: absolute;
+      z-index: 2; }
+      .card-item .card-img .like-button .tags {
+        color: #fff;
+        background: #fd0505;
+        border-radius: 5px;
+        padding: 5px; }
+      .card-item .card-img .like-button .tags:hover {
+        background: #690404; }
+    .card-item .card-img .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: .3s ease;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    .card-item .card-img .play-icon {
+      background: transparent;
+      border: none;
+      position: absolute;
+      color: #fa0e0e;
+      font-size: 3.5rem;
+      cursor: pointer;
+      left: 45%;
+      bottom: 39%; }
+      .card-item .card-img .play-icon .fa-play-circle:hover {
+        color: #690404; }
   .card-item .card-text {
     color: #fff;
     margin: 5px 10px;
