@@ -43,7 +43,9 @@ body {
     transform: scale(1.2); }
   .card_content .card_content_img img {
     transition: all .4s ease-in-out;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   .card_content .card_content_content {
     padding: 5px;
     background: #152729;
@@ -77,51 +79,84 @@ body {
   width: 300px; }
   .card-item .card-img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     overflow: hidden;
     cursor: pointer;
     position: relative; }
-    .card-item .card-img img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      position: relative; }
-    .card-item .card-img .like-button {
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 15rem;
-      position: absolute;
-      z-index: 2; }
-      .card-item .card-img .like-button .tags {
-        color: #fff;
-        background: #fd0505;
-        border-radius: 5px;
-        padding: 5px; }
-      .card-item .card-img .like-button .tags:hover {
-        background: #690404; }
-    .card-item .card-img .overlay {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      transition: .3s ease;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-    .card-item .card-img .play-icon {
-      background: transparent;
-      border: none;
-      position: absolute;
-      color: #fa0e0e;
-      font-size: 3.5rem;
-      cursor: pointer;
-      left: 45%;
-      bottom: 39%; }
-      .card-item .card-img .play-icon .fa-play-circle:hover {
-        color: #690404; }
+  .card-item .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    object-fit: cover;
+    transition: all .3s ease-in-out; }
+  .card-item .card-img:hover img {
+    opacity: .3; }
+  .card-item .like-button {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15rem;
+    position: absolute;
+    z-index: 2; }
+    .card-item .like-button .tags {
+      color: #fff;
+      background: #fd0505;
+      border-radius: 5px;
+      padding: 5px; }
+    .card-item .like-button .tags:hover {
+      background: #690404; }
+  .card-item .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .card-item .play-icon {
+    background: transparent;
+    border: none;
+    position: absolute;
+    color: #fa0e0e;
+    font-size: 3.5rem;
+    cursor: pointer;
+    left: 45%;
+    bottom: 39%; }
+    .card-item .play-icon .fa-play-circle:hover {
+      color: #690404; }
   .card-item .card-text {
     color: #fff;
     margin: 5px 10px;
     cursor: pointer; }
   .card-item .card-text:hover {
     color: aquamarine; }
+
+/* arjetas de los ultimos animes en emision */
+.card_e {
+  width: 300px;
+  cursor: pointer; }
+  .card_e .card_e_img {
+    width: 100%; }
+  .card_e .card_e_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; }
+  .card_e .card_e_img_txt {
+    margin: 5px 5px;
+    color: #fff;
+    max-height: 200px;
+    overflow: hidden; }
+  .card_e .card_e_img_txt:hover {
+    color: aquamarine; }
+
+.etiquetas {
+  display: flex;
+  justify-content: flex-start; }
+  .etiquetas .tickets {
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+    background: red;
+    margin: 0 10px;
+    border-radius: 20px; }

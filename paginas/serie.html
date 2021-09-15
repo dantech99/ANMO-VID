@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../funcionalidades/bootstrap.min.js">
-    <link rel="stylesheet" href="../estilos/info.css">
+    <link rel="stylesheet" href="../css/info.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -17,39 +17,41 @@
 <body>
 
 <!-- menu star -->
-<nav class="navbar sticky-top navbar-expand-lg menu"> 
-    <div class="container-xxl">
-      <a class="navbar-brand " href="/index.html"  style="color:rgb(255, 255, 255); font-size: 40px;" >
-         Otakru.DW
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-dark "> 
+    <div class=" container-fluid">
+      <a class="navbar-brand text-light fs-2" href="#"  >
+         FOREST
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icono_lista"><i class="bi bi-list" style="font-size: 2rem;"></i></span>
       </button>
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-           <a href="/index.html"><button  class="btn boton me-2" type="button" ><i class="bi bi-house-door"></i> &nbsp;Home</button></a>
-          </li>
-          <li class="nav-item">
-            <button class="btn boton me-2" type="button" ><i class="bi bi-collection"></i>&nbsp;Animes</button>
-          </li>
-          <li class="nav-item">
-            <button class="btn me-2 boton" type="button" ><i class="bi bi-folder"></i>&nbsp;Manga</button>
-          </li>
-          <li class="nav-item">
-            <button class="btn boton me-2" type="button" ><i class="bi bi-file-earmark-richtext"></i>&nbsp;Pack</button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item btn">
+            <a href="../index.html" class="efect me-2"><i class="fas fa-home"></i> Home</a>
           </li>
   
+          <li class="nav-item btn">
+            <a href="#" class="efect me-2"><i class="fas fa-photo-video"></i> Mangas</a>
+          </li>
+  
+          <li class="nav-item btn">
+            <a href="#" class="efect me-2"><i class="fas fa-box"></i> Pack</a>
+          </li>
+          <li class="nav-item btn">
+            <a href="#" class="efect me-2"><i class="fas fa-list"></i> Directorio Anime</a>
+          </li>
+          <li class="nav-item btn">
+            <a href="#" class="efect me-2"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="efect me-2"><i class="fab fa-twitter"></i></a>
+          </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn boton me-2" type="button" ><i class="bi bi-justify"></i>&nbsp;Directorio Anime</button>
-          <button class="btn boton me-2" type="button" ><i class="bi bi-facebook"></i></button>
-          <button class="btn boton me-2" type="button"  ><i class="bi bi-twitter"></i></button>
-          
-        </form>
       </div>
     </div>
   </nav>
+
 
   <!-- menu end -->
 
@@ -57,15 +59,18 @@
   <div class="header">
     <div class="header_text">
         <h1>Darling In The Franx</h1><a href=""><span class="etiqueta">Anime</span></a>
-         
     </div>
   </div>
 
-  <div class="main">
+  <div class="secction">
 
 <div class="sidebar">
   <div class="header_img_port">
     <img src="../imagenes/darling.jpg" alt="">
+    <div class="sd_btn">
+      <a href="" class="btn">Add lista</a>
+      <a href="" class="btn">favoritos</a>
+    </div>
 </div>
 </div>
 
@@ -75,24 +80,27 @@
         <div class="info_title">
             <h2>Sinopsis</h2>
         </div>
-        <div class="info_tickets">
-            <a href="">Anime</a>
-            <a href="">Mecha</a>
-            <a href="">Romance</a>
-            <a href="">Accion</a>
-        </div>
         <div class="info_text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi minus, eos cum quam doloribus molestias fuga doloremque explicabo quae. Nesciunt in repellat, qui ex laborum consequuntur modi fugiat error dignissimos eveniet, neque ipsum dicta nihil. Repudiandae libero ipsa ut voluptatibus ea, modi est maiores quibusdam, aut quae officiis debitis non!
         </div>
+        <div class="info_title">
+          <h2>generos</h2>
+        </div>
+        <div class="info_tickets">
+          <a href="">Anime</a>
+          <a href="">Mecha</a>
+          <a href="">Romance</a>
+          <a href="">Accion</a>
+      </div>
     </div>
-    <div class="galeria">
+    <!-- <div class="galeria">
         <img src="../imagenes/darling.jpg" alt="">
         <img src="../imagenes/darling.jpg" alt="">
         <img src="../imagenes/darling.jpg" alt="">
         <img src="../imagenes/darling.jpg" alt="">
         <img src="../imagenes/darling.jpg" alt="">
         <img src="../imagenes/darling.jpg" alt="">
-    </div>
+    </div> -->
 
 
 </div>

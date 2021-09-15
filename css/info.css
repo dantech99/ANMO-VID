@@ -7,17 +7,17 @@ body{
     color: #fff;
 }
 
-.main{
+.secction{
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-areas: "sidebar main main main";
+    grid-template-areas: "sidebar contenido";
 }
 
 
 
 .header{
     width: auto;
-    height: 350px;
+    height: 380px;
     margin-bottom: -150px;
    min-width: 950px;
     overflow: hidden;
@@ -71,7 +71,7 @@ font-weight: 500;
 
 
 .contenido{
-    grid-area: main;
+    grid-area: contenido;
     margin: 30px;
     margin-top: 200px;
 
@@ -142,7 +142,17 @@ font-weight: 500;
     z-index: 200;
 }
 .header_img_port img{
-    width: 100%;
-    border: 3px solid rgb(255, 255, 255);
-   
+    width: 300px;
+    border: 3px solid rgb(255, 255, 255);  
+}
+.sd_btn{
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+.sd_btn .btn{
+    padding: 10px;
+    background:#fff;
+    color: #111313;
+    margin: 5px;
 }
