@@ -66,18 +66,33 @@ body {
 
 @media screen and (max-width: 375px) {
   .card_content {
+    width: 150px;
+    height: 100%;
+    margin: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .card_content {
     width: 200px;
-    height: auto; }
-  .item {
-    margin: 0 auto; }
-  .card_content_img {
-    width: 200px; }
-  .card_content_img img {
-    width: 100%; } }
+    margin: 20px auto; } }
+
+@media screen and (max-width: 900px) {
+  .card_content {
+    width: 250px;
+    margin: 20px auto; } }
+
+@media screen and (min-width: 900px) {
+  .card_content {
+    width: 300px;
+    margin: 20px auto; } }
+
+@media screen and (min-width: 1000px) {
+  .card_content {
+    width: 200px;
+    margin: 20px auto; } }
 
 /* tarjetas ultimos capitulos */
 .card-item {
-  width: 300px; }
+  width: 100%; }
   .card-item .card-img {
     width: 100%;
     height: 220px;
@@ -135,7 +150,7 @@ body {
 
 /* arjetas de los ultimos animes en emision */
 .card_e {
-  width: 300px;
+  width: 100%;
   cursor: pointer; }
   .card_e .card_e_img {
     width: 100%; }
