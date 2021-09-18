@@ -103,7 +103,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    position: relative;
     object-fit: cover;
     transition: all .3s ease-in-out; }
   .card-item .card-img:hover img {
@@ -111,16 +110,15 @@ body {
   .card-item .like-button {
     font-size: 20px;
     cursor: pointer;
-    border-radius: 15rem;
+    color: #fff;
+    background: #fd0505;
+    padding: 4px;
+    border: 5px;
     position: absolute;
-    z-index: 2; }
-    .card-item .like-button .tags {
-      color: #fff;
-      background: #fd0505;
-      border-radius: 5px;
-      padding: 5px; }
-    .card-item .like-button .tags:hover {
-      background: #690404; }
+    z-index: 2;
+    margin-bottom: 10px; }
+  .card-item .like-button:hover {
+    background: #690404; }
   .card-item .overlay {
     position: absolute;
     height: 100%;
