@@ -174,3 +174,58 @@ body {
     background: red;
     margin: 0 10px;
     border-radius: 20px; }
+
+.header {
+  background-color: #0769e0;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.navgar {
+  display: flex;
+  justify-content: space-around;
+  max-width: 992px;
+  margin: 0 auto; }
+
+.navgar-link {
+  color: white;
+  text-decoration: none; }
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px; }
+
+.navgar_menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none; }
+
+.navgar-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content; }
+
+.navgar-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px; }
+
+.navgar-menu-link:hover,
+.navgar-menu-link:active {
+  background-color: #034574;
+  transition: .5s; }
+
+/* toggle */
+.navgar-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none; }
